@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-// TRYING TO FETCH FROM CONTENT FROM XML FILE
+
 
 public class XMLFile {
 	public static void main(String[] args) {
