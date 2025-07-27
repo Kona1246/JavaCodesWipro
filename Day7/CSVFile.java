@@ -20,7 +20,7 @@ public class CSVFile {
             String line;
 
             while ((line = br.readLine()) != null) {
-                // Print each line (i.e., each row of the CSV)
+                
                 System.out.println("CSV Row: " + line);
             }
         } catch (IOException e) {
