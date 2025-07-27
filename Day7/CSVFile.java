@@ -8,7 +8,7 @@ public class CSVFile {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		File csvFile = new File("C:\\Testing.csv"); // your CSV file path
+		File csvFile = new File("C:\\Testing.csv"); 
 
         
         System.out.println("Reading file from: " + csvFile.getAbsolutePath());
