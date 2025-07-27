@@ -11,7 +11,7 @@ public class FileExceptionHandlingExample {
 		// TODO Auto-generated method stub
 		File f1 = new File("C:\\Sayantani.txt");
 
-        // Optional: print the absolute path for debugging
+
         System.out.println("Looking for file at: " + f1.getAbsolutePath());
 
         try {
