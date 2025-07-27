@@ -10,7 +10,7 @@ public class CSVFile {
 		// TODO Auto-generated method stub
 		File csvFile = new File("C:\\Testing.csv"); // your CSV file path
 
-        // Optional: print the full path being used
+        
         System.out.println("Reading file from: " + csvFile.getAbsolutePath());
 
         BufferedReader br = null;
