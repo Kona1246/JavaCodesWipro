@@ -1,7 +1,7 @@
 package Day10;
 import java.io.*;
 
-//Make the class Serializable
+
 class Student6 implements Serializable {
  private static final long serialVersionUID = 1L;
 
@@ -14,7 +14,7 @@ class Student6 implements Serializable {
  }
 
  public Student6() {
-     // Default constructor
+     
  }
 
  public String getName() {
@@ -40,24 +40,24 @@ public class SerilazationDemo {
      s1.setName("Sayantani");
      s1.setAge(25);
 
-     // Correct path without escape quotes
+     
      String filePath = "C:\\Users\\sayan\\Downloads\\outputdemo.txt";
 
-     // Serialization
+    
      FileOutputStream out = new FileOutputStream(filePath);
      ObjectOutputStream output = new ObjectOutputStream(out);
      output.writeObject(s1);
      output.close();
      out.close();
 
-     // Deserialization
+     
      FileInputStream in = new FileInputStream(filePath);
      ObjectInputStream input = new ObjectInputStream(in);
      Student6 s2 = (Student6) input.readObject();
      input.close();
      in.close();
 
-     // Output deserialized object
+     
      System.out.println("Name: " + s2.getName());
      System.out.println("Age: " + s2.getAge());
  }
