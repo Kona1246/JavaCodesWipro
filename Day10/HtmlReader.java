@@ -10,7 +10,7 @@ public class HtmlReader {
 
         StringBuilder htmlContent = new StringBuilder();
 
-        // Read the file content
+        
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = br.readLine()) != null) {
@@ -21,18 +21,17 @@ public class HtmlReader {
             return;
         }
 
-        // Convert to a single string
+    
         String content = htmlContent.toString();
 
-        // Extract <title> content
         String title = extractTagContent(content, "title");
         System.out.println("Title: " + title);
 
-        // Extract all <p> tags
+        
         extractAllTagContent(content, "p");
     }
 
-    // Method to extract the first occurrence of a specific tag
+    
     private static String extractTagContent(String content, String tagName) {
         String openTag = "<" + tagName + ">";
         String closeTag = "</" + tagName + ">";
@@ -46,7 +45,7 @@ public class HtmlReader {
         return "Not Found";
     }
 
-    // Method to extract all occurrences of a specific tag
+    
     private static void extractAllTagContent(String content, String tagName) {
         String openTag = "<" + tagName + ">";
         String closeTag = "</" + tagName + ">";
