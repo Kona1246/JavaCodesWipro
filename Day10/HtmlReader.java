@@ -6,7 +6,7 @@ import java.io.IOException;
 public class HtmlReader {
 
     public static void main(String[] args) {
-        String filePath = "C:\\input.html";  // Your HTML file
+        String filePath = "C:\\input.html";  
 
         StringBuilder htmlContent = new StringBuilder();
 
